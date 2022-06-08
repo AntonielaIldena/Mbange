@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MbangeImoveis</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <style>
+      #info-content{
+      display: flex;
+      align-items: center;
+
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top bg-primary-color" id="navbar">
+      <div class="container py-3"> <!--padding de 3px no eixo y-->
+        <a href="#" class="navbar-brand primary-color"> <!--marca do site-->
+          <img id="logo" src="img/logo.mbange.png" alt="mbange logo">
+          <span>Mbange</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar-items"
+          aria-controls="navbar-items"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          > <!-- gerar colapso no menu, criar items da barra de navegação-->
+          <i class="bi bi-list"></i> <!--classe do ícone-->
+        </button> <!--botão de hamburguer para mobile-->
+        <div class="collapse navbar-collapse" id="navbar-items">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0"> <!--barra de navegação-->
+            <li class="nav-item">
+              <a href="#" class="nav-link active primary-color" aria-current="page">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#catalogo" class="nav-link primary-color">Catalogo</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link primary-color">Contactos</a>
+            </li>
+          </ul> 
+        </div>
+      </div>
+    </nav>
+    <div class="info-container" id="info-container">
+      <div class="col-12">
+        <h2 class="title primary-color">Sobre Nós</h2>
+      </div>
+      <div class="col-12">
+        <div class="row">
+          <div class="col-12 col-md-5" id="info-banner">
+            <img
+               src="img/Mbange.team.jpeg" 
+               alt="Informações da empresa" 
+               class="img-fluid"
+              />
+          </div>
+      <div class="col-12 col-md-7 bg-secondary-color" id="info-content">
+        <div class="row">
+          <div class="col-12">
+            <p class="subtitle secondary-color">
+             <h1> Instituto Superior Politécnico de Tecnologias e Ciências </h1>
+             <h2>Departamento de Ciências Sociais
+               Curso de Gestão Empresarial
+             </h2>
+             <h3>Tema: MBANGE: Sistema de Informação</h3>
+             <h5> Integrantes do Grupo:
+              Honorina Vemba_20190270;
+              Iracelma Pires_20191227;
+              Lília Fitela_20190051;
+              Luísa Jorge_20170802;
+              Márcio Bige_20191350.
+             </h5>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

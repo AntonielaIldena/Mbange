@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MbangeImoveis</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top bg-primary-color" id="navbar">
+      <div class="container py-3"> <!--padding de 3px no eixo y-->
+        <a href="#" class="navbar-brand primary-color"> <!--marca do site-->
+          <img id="logo" src="img/logo.mbange.png" alt="mbange logo">
+          <span>Mbange</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar-items"
+          aria-controls="navbar-items"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          > <!-- gerar colapso no menu, criar items da barra de navegação-->
+          <i class="bi bi-list"></i> <!--classe do ícone-->
+        </button> <!--botão de hamburguer para mobile-->
+        <div class="collapse navbar-collapse" id="navbar-items">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0"> <!--barra de navegação-->
+            <li class="nav-item">
+              <a href="#" class="nav-link active primary-color" aria-current="page">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#imoveisemdestaque" class="nav-link primary-color">Imóveis em Destaque</a>
+            </li>
+            <li class="nav-item">
+              <a href="#catalogo" class="nav-link primary-color">Catalogo</a>
+            </li>
+            <li class="nav-item">
+              <a href="file:///C:/Users/Niely/Documents/GitHub/projeto-iMovi/Team.html" class="nav-link primary-color">Sobre Nós</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link primary-color">Contactos</a>
+            </li>
+          </ul> 
+        </div>
+      </div>
+    </nav>
+    <div class="container" id="slider-container">
+      <div class="carousel slide" id="slider" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button
+            type="button" 
+            class="active" 
+            data-bs-target="#slider" 
+            data-bs-slide-to="0"
+            aria-current="true"
+            aria-label="Slide 1"
+            ></button>
+            <button
+            type="button" 
+            data-bs-target="#slider" 
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+            ></button>
+            <button
+            type="button"
+            data-bs-target="#slider" 
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+            ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/banner-1.jpg" alt="Casa 1" class="d-block w-100">
+            <div class="carousel-caption">
+              <h5>Imóveis Completos</h5>
+              <a href="#" class="btn btn-dark">Ver catalogo</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/banner-2.jpg" alt="Casa 2" class="d-block w-100">
+            <div class="carousel-caption">
+              <h5>Residências Modernas</h5>
+              <a href="#" class="btn btn-dark">Ver catalogo</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/banner-3.jpg" alt="Casa 3" class="d-block w-100">
+            <div class="carousel-caption">
+              <h5>Imóveis Prontos para Mudança</h5>
+              <a href="#" class="btn btn-dark">Ver catalogo</a>
+            </div>
+          </div>
+        </div>
+        <button 
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#slider"
+          data-bs-slide="prev"
+        >
+        <i class="bi bi-chevron-compact-left"></i>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button 
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#slider"
+          data-bs-slide="next"
+        >
+        <i class="bi bi-chevron-compact-right"></i>
+        <span class="visually-hidden">Next</span>
+      </button>
+      </div>
+
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Voltar ao topo</button>
+
+
+      <div class="col-12 col-md-10 offset-md-1" id="mini-banners">
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <div class="card text-center">
+              <i class="bi bi-house primary-color"></i>
+              <div class="card-body">
+                <h5 class="card-title primary-color">Imovéis Completos</h5>
+                <p class="card-text secondary-color">
+                 Residências de alto padrão com características únicas e com todo o conforto para si e para a sua família.
+                </p>
+                <a href="#" class="btn btn-dark">Saber Mais</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="card text-center">
+              <i class="bi bi-check-lg primary-color"></i>
+              <div class="card-body">
+                <h5 class="card-title primary-color">Venda ou Arrendamento Seguros</h5>
+                <p class="card-text secondary-color">
+                 Imóveis previamente selecionados, por uma equipe profissional e competente, do mais alto escalão. 
+                </p>
+                <a href="#" class="btn btn-dark">Saber Mais</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="card text-center">
+              <i class="bi bi-truck primary-color"></i>
+              <div class="card-body">
+                <h5 class="card-title primary-color">Mbange Mudanças</h5>
+                <p class="card-text secondary-color">
+                Caixotes, transporte e até mesmo arrumação, já não dor de cabeça, deixe tudo conosco e tenha a melhor mudança da sua vida. 
+                </p>
+                <a href="#" class="btn btn-dark">Saber Mais</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container" id="featured-container">
+      <div class="col-12">
+        <h2 class="title primary-color" #imoveisemdestaque>Imóveis em Destaque</h2>
+        <p class="subtitle secondary-color">
+          Conheça os imovéis feitos à sua medida.
+        </p>
+      </div>
+      <div class="col-12" id="featured-images">
+        <div class="row g-4">
+          <div class="col-12 col-md-4">
+            <img src="img/project-1.jpg" alt="Projeto 1" class="img-fluid"> 
+            <div class="banner-content">
+              <p class="secondary-color">Arrendamento</p>
+              <h3>Tukayana</h3>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <img src="img/project-2.jpg" alt="Projeto 2" class="img-fluid"> 
+            <div class="banner-content">
+              <p class="secondary-color">Arrendamento</p>
+              <h3>Luejy</h3>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <img src="img/project-3.jpg" alt="Projeto 3" class="img-fluid"> 
+            <div class="banner-content">
+              <p class="secondary-color">Arrendamento</p>
+              <h3>Kiesse</h3>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <img src="img/project-4.jpg" alt="Projeto 4" class="img-fluid"> 
+            <div class="banner-content">
+              <p class="secondary-color">Compra</p>
+              <h3>Soliwa</h3>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <img src="img/project-5.jpg" alt="Projeto 5" class="img-fluid"> 
+            <div class="banner-content">
+              <p class="secondary-color">Compra</p>
+              <h3>Owasi</h3>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <img src="img/project-6.jpg" alt="Projeto 6" class="img-fluid"> 
+            <div class="banner-content">
+              <p class="secondary-color">Compra</p>
+              <h3>Kiame</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+          <section class="container">
+            <h2 class="text-center" #catalogo>Catalogo</h2>
+            <div class="properties-list">
+                <div class="first property featured">
+                    <img src="img/property1.jpg" alt="property image">
+                    <div class="card">
+                        <h3 class="property-name">Welwitschia</h3>
+                        <h6 class="property-name">Compra</h6>
+                        <p class="description">Casa disponível para venda, 
+                          5 quartos sendo 2 suítes, 
+                          5 wc, 
+                          2 salas, 
+                          1 cozinha, 
+                          1 área gourmet, 
+                          1 escritório, 
+                          área de serviço completa, 
+                          Casa totalmente automatizada e mobiliada.
+                        </p>
+                        <p class="price">
+                            Preço: <span>188.000.000,00AOA</span>
+                        </p>
+                        <a href="#" class="lmbutton">Leia mais</a>
+                    </div><!--.card-->
+                </div><!--.property-->
+                <div class="second property featured">
+                    <img src="img/property2.jpg" alt="property image">
+                    <div class="card">
+                        <h3 class="property-name">Nasoma</h3>
+                        <h6 class="property-name">Arrendamento</h6>
+                        <p class="description">Casa disponível para venda, 
+                          5 quartos sendo 2 suítes, 
+                          5 wc, 
+                          2 salas, 
+                          1 cozinha, 
+                          1 área gourmet, 
+                          1 escritório, 
+                          área de serviço completa, 
+                          Casa totalmente automatizada e mobiliada.</p>
+                        <p class="price">
+                            Price: <span>536.000,00AOA</span>
+                        </p>
+                        <a href="#" class="lmbutton">Leia mais</a>
+                    </div><!--.card-->
+                </div><!--.property-->
+                <div class="property">
+                    <img src="img/property3.jpg" alt="property image">
+                    <div class="card">
+                        <h3 class="property-name">Diegy</h3>
+                        <h6 class="property-name">Compra</h6>
+                        <p class="description">Casa disponível para venda, 
+                          5 quartos sendo 2 suítes, 
+                          5 wc, 
+                          2 salas, 
+                          1 cozinha, 
+                          1 área gourmet, 
+                          1 escritório, 
+                          área de serviço completa, 
+                          Casa totalmente automatizada e mobiliada.</p>
+                        <p class="price">
+                            Price: <span>124.000.000,00AOA</span>
+                        </p>
+                        <a href="#" class="lmbutton">Leia mais</a>
+                    </div><!--.card-->
+                </div><!--.property-->
+                <div class="property">
+                    <img src="img/property4.jpg" alt="property image">
+                    <div class="card">
+                        <h3 class="property-name">Weza</h3>
+                        <h6 class="property-name">Compra</h6>
+                        <p class="description">Casa disponível para venda, 
+                          5 quartos sendo 2 suítes, 
+                          5 wc, 
+                          2 salas, 
+                          1 cozinha, 
+                          1 área gourmet, 
+                          1 escritório, 
+                          área de serviço completa, 
+                          Casa totalmente automatizada e mobiliada.</p>
+                        <p class="price">
+                            Preço: <span>87.000.000,00AOA</span>
+                        </p>
+                        <a href="#" class="lmbutton">Leia mais</a>
+                    </div><!--.card-->
+                </div><!--.property-->
+                <div class="property">
+                    <img src="img/property5.jpg" alt="property image">
+                    <div class="card">
+                        <h3 class="property-name">Natchove</h3>
+                        <h6 class="property-name">Arrendamento</h6>
+                        <p class="description">Casa disponível para aluguel,
+                          min. 2 anos,  
+                          5 quartos sendo 2 suítes, 
+                          5 wc, 
+                          2 salas, 
+                          1 cozinha, 
+                          1 área gourmet, 
+                          1 escritório, 
+                          área de serviço completa, 
+                          Casa totalmente automatizada e mobiliada.</p>
+                        <p class="price">
+                            Preço: <span>300.000,00AOA</span>
+                        </p>
+                        <a href="#" class="lmbutton">Leia mais</a>
+                    </div><!--.card-->
+                </div><!--.property-->
+                <div class="property">
+                    <img src="img/property6.jpg" alt="property image">
+                    <div class="card">
+                        <h3 class="property-name">Ikelwa</h3>
+                        <h6 class="property-name">Arrendamento</h6>
+                        <p class="description">Casa disponível para aluguel,
+                          min. 2 anos,  
+                          5 quartos sendo 2 suítes, 
+                          5 wc, 
+                          2 salas, 
+                          1 cozinha, 
+                          1 área gourmet, 
+                          1 escritório, 
+                          área de serviço completa, 
+                          Casa totalmente automatizada e mobiliada.</p>
+                        <p class="price">
+                            Preço: <span>450.000,00AOA</span>
+                        </p>
+                        <a href="#" class="lmbutton">Leia</a>
+                    </div><!--.card-->
+                </div><!--.property-->
+            </div><!--.properties-list-->
+        </section>
+
+        <div class="info-container" id="info-container">
+          <div class="col-12">
+            <h2 class="title primary-color">Sobre Nós</h2>
+            <p class="subtitle secondary-color">
+              Saiba mais sobre a experiência da nossa incrível equipe.
+            </p>
+          </div>
+          <div class="col-12">
+            <div class="row">
+              <div class="col-12 col-md-5" id="info-banner">
+                <img
+                   src="img/Mbange.team.jpeg" 
+                   alt="Informações da empresa" 
+                   class="img-fluid"
+                  />
+              </div>
+          <div class="col-12 col-md-7 bg-secondary-color" id="info-content">
+            <div class="row">
+              <div class="col-12">
+                <h2 class="title primary-color">Estes dados fazem a diferença</h2>
+                <p class="subtitle secondary-color">
+                 Somos uma equipe dinâmica e sem medo de novos desafios, buscamos sempre o melhor para os nossos Clientes.
+                 Aqui na Mbange, vai encontrar a casa dos seus sonhos, com o design que idealizou, temos desde arquitetos
+                 à house organizers, tudo isso para que a si não lhe falte nada, existimos para a sua satisfação, casas com 
+                 designs únicos, modernos e confortáveis para que desfrute de um espaço de requinte e familiar ao mesmo tempo
+                 connosco vai viver uma expêriencia sem igual.
+                </p>
+              </div>
+              <div class="col-12" id="info-numbers">
+                <div class="row">
+                  <div class="col-4">
+                    <h3 class="primary-color">10</h3>
+                    <p class="secondary-color">Anos no mercado imobiliário</p>
+                  </div>
+                  <div class="col-4">
+                    <h3 class="primary-color">1480</h3>
+                    <p class="secondary-color">Residências Entregues</p>
+                  </div>
+                  <div class="col-4">
+                    <h3 class="primary-color">+972</h3>
+                    <p class="secondary-color">Clientes</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <a href="#" class="btn btn-dark">Saber Mais</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="container-fluid bg-dark-color" id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-12" id="footer-top">
+            <div class="row justify-content-between">
+              <div class="col-4"><h2>Mbange</h2></div>
+              <div class="col-4" id="social-icons">
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-youtube"></i>
+                <i class="bi bi-twitter"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-12" id="footer-details">
+            <div class="row">
+              <div class="col-12 col-md-4" id="news-container">
+                <h4>Fique por dentro das novidades</h4>
+                <p class="secondary-color">Cadastre-se para não perder as nossas ofertas</p>
+                <form>
+                  <div class="mb-3">
+                    <input type="email" class="form-control" placeholder="Digite seu e-mail">
+                  </div>
+                  <button class="btn btn-dark" type="submit">Registrar</button>
+                </form>
+              </div>
+              <div class="col-12 col-md-4" id="contact-container">
+                <h4>Formas de contato</h4>
+                <p class="secondary-color">(+244)999-999-999</p>
+                <p class="secondary-color">contato@mbange.com</p>
+              </div>
+              <div class="col-12 col-md-4" id="links-container">
+                <div class="row">
+                  <h4>E se procura por:</h4>
+                  <div class="col-6">
+                    <ul class="list-unstyled">
+                      <li><a href="#" class="secondary-color">Catalogo</a></li>
+                      <li><a href="#" class="secondary-color">Imóveis</a></li>
+                      <li><a href="#" class="secondary-color">Sobre Nós</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-6">
+                    <ul class="list-unstyled">
+                      <li><a href="file:///C:/Users/Niely/Documents/GitHub/projeto-iMovi/formulario.html" class="secondary-color">Contratar</a></li>
+                      <li><a href="#" class="secondary-color">Trabalhe conosco</a></li>
+                      <li><a href="#" class="secondary-color">Contato</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12" id="footer-bottom">
+            <div class="row justify-content-between">
+              <div class="col-12 col-md-3">
+                <p class="secondary-color">MbangeImoveis &copy; 2022</p>
+              </div>
+              <div class="col-12 col-md-3">
+                <p class="secondary-color">Realizamos o seu projeto <i class="bi bi-heart"></i></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="script.js"></script>
+    </footer>
+  </body>
+</html>
